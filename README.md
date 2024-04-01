@@ -1,9 +1,6 @@
 
 # Bedrock Demo
-This repository is a Gen AI demo using claude 3. It contains 3 pre-built examples which help customers getting started with the Amazon Bedrock.
-
-> [!NOTE]
-> This demo originally had five examples, but two of them involve customer data, so we are not sharing them. If you'd like to know which ones, please contact us. In that case, we still can't give you the data, but we will share the code.
+This repository is a Gen AI demo using claude 3. It contains 5 pre-built examples which help customers getting started with the Amazon Bedrock.
 
 ![Pic 1.](architecture.png)
 
