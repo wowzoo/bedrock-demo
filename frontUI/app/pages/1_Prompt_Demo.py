@@ -15,7 +15,12 @@ def generate_response(q_text):
     return response.text
 
 
-st.set_page_config(page_title='Gen AI - Text')
+st.set_page_config(
+    page_title='Gen AI - Text',
+    page_icon = 'images/aws_favi.png',
+    layout = 'wide'    
+)
+
 st.title('무엇이든 물어보세요.')
 
 q_input = st.text_area('Enter your text', '', height=200)

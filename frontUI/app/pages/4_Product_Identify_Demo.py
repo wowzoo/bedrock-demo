@@ -11,7 +11,11 @@ API_URL = f'http://{ALB_URL}/identify'
 
 s3 = boto3.client('s3')
 
-st.set_page_config(page_title='Gen AI - Identification')
+st.set_page_config(
+    page_title='Gen AI - Identification',
+    page_icon = 'images/aws_favi.png',
+    layout = 'wide'    
+)
 st.title('상품 식별')
 
 
