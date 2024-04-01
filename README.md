@@ -68,3 +68,6 @@ If you've created anything by yourself, you'll need to delete it.
 ```shell
 cdk destroy BedrockDemo
 ```
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
