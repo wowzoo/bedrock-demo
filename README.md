@@ -16,7 +16,7 @@ cdk --version
 
 ### setting AWS_PROFILE
 ```shell
-export AWS_PROFILE=<the configuration profile for aws-cli>
+export AWS_PROFILE=[The configuration profile for aws-cli]
 ```
 
 ## How to deploy
@@ -48,7 +48,7 @@ After successfully deploying the cdk, there are two variables in the output. One
 
 ```shell
 export ALB_URL=[The DNS name of the ALB]
-export BUCKET_NAME=[the name of the S3 bucket]
+export BUCKET_NAME=[The name of the S3 bucket]
 ```
 
 ### Step 5. Run streamlit
