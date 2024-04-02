@@ -12,3 +12,4 @@ cdk.out
 # ETC
 .envrc
 backup/
+BedrockDemo/
