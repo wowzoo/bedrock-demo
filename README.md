@@ -22,13 +22,13 @@
 Backend를 구성하는 아키텍처입니다. Frontend는 Streamlit을 사용하였습니다.
 Frontend에서 API 호출을 통해 Backend에 구성된 Lambda를 호출하는 방식입니다.
 
-Backend는 ALB와 Lambda를 통해 Bedrock를 호출하는 부분과 코드 변경에 따른 실시간 Lambda Function 업데이트를 위해 CodeCommit과 CodeBuild 등을 사용한 CI/CD로 구성되어 있습니다.
+Backend는 *ALB와 Lambda를 통해 Bedrock를 호출하는 부분*과 *코드 변경에 따른 실시간 Lambda Function 업데이트를 위해 CodeCommit과 CodeBuild 등을 사용한 CI/CD*로 구성되어 있습니다.
 
 ![Pic 1.](architecture.png)
 
 ## Prerequisites
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)가 설치되어 있고 사용하려는 계정으로 설정되어 있는지 확인합니다.
-- 컨테이너 이미지를 빌드하려면 [Docker Engine](https://docs.docker.com/engine/install/)이 설치되어 있어야 합니다. Lambda 함수가 컨테이너 이미지를 사용하고 있습니다.
+- 컨테이너 이미지를 빌드하려면 [Docker Engine](https://docs.docker.com/engine/install/)이 설치되어 있어야 합니다. *Lambda 함수가 컨테이너 이미지를 사용하고 있습니다.*
 
 ### install cdk
 ```shell
@@ -59,14 +59,12 @@ pip install -r requirements.txt
 ### Step 3. Deploy CDK
 cdk deploy를 하기 전에 우선 Docker Engine이 실행 중인지 확인합니다. cdk deploy를 실행하면 기존에 빌드된 컨테이너 이미지가 없으면 자동으로 컨테이너 빌드를 수행합니다.
 
-> 참고) cdk 를 통해 빌드된 컨테이너 이미지는 ECR 의 private repository 중 *cdk-* 로 시작하는 repository 에 올라갑니다.
-
 ```shell
 cdk deploy BedrockDemo
 ```
 
 ### Step 4. Set Environment Variables
-cdk를 성공적으로 배포하고 나면 Outputs에 ALB의 DNS 이름과 S3 버킷의 이름이 출력됩니다. 이를 복사하여 환경 변수로 만드세요.
+cdk를 성공적으로 배포하고 나면 Outputs에 *ALB의 DNS 이름*과 *S3 버킷 이름*이 출력됩니다. 이를 복사하여 환경 변수로 만듭니다.
 
 ![Pic 2.](cdk_output.png)
 
