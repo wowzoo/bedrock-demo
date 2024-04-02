@@ -22,7 +22,7 @@
 Backend를 구성하는 아키텍처입니다. Frontend는 Streamlit을 사용하였습니다.
 Frontend에서 API 호출을 통해 Backend에 구성된 Lambda를 호출하는 방식입니다.
 
-Backend는 *ALB와 Lambda를 통해 Bedrock를 호출하는 부분*과 *코드 변경에 따른 실시간 Lambda Function 업데이트를 위해 CodeCommit과 CodeBuild 등을 사용한 CI/CD*로 구성되어 있습니다.
+Backend는 *ALB와 Lambda를 통해 Bedrock를 호출하는 부분* 과 *코드 변경에 따른 실시간 Lambda Function 업데이트를 위해 CodeCommit과 CodeBuild 등을 사용한 CI/CD*로 구성되어 있습니다.
 
 ![Pic 1.](architecture.png)
 
@@ -64,7 +64,7 @@ cdk deploy BedrockDemo
 ```
 
 ### Step 4. Set Environment Variables
-cdk를 성공적으로 배포하고 나면 Outputs에 *ALB의 DNS 이름*과 *S3 버킷 이름*이 출력됩니다. 이를 복사하여 환경 변수로 만듭니다.
+cdk를 성공적으로 배포하고 나면 Outputs에 *ALB의 DNS 이름* 과 *S3 버킷 이름*이 출력됩니다. 이를 복사하여 환경 변수로 만듭니다.
 
 ![Pic 2.](cdk_output.png)
 
