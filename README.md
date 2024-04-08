@@ -16,7 +16,7 @@
     - 현재는 Claude 3의 정보로만 신발을 추천해 주는데 고객사의 상품 데이터로 DB를 구축하면 고객사의 상품에서만 추천을 할 수 있다고 가이드합니다.
 5. [Video ShotForm](./frontUI/app/pages/5_Video_ShotForm.py)
     - 무신사는 MUSINSA TV 라는 유투브 채널을 운영중인데 다양한 동영상들이 있습니다. 대부분 길이가 10분 이상인 동영상들인데 숏폼이 유행하는 현재 트렌드에 맞게 이러한 동영상의 핵심만 요약해서 1분 내외의 짧은 동영상으로 바꾸어 줍니다.
-6. [Image Generation](./frontUI/app/pages/6_Product_Block.py)
+6. [Product Block](./frontUI/app/pages/6_Product_Block.py)
     - 이미지를 식별해서 광고용으로 쓸 수 있는 이미지 인지 아닌지 판단합니다.
 7. [Image Generation](./frontUI/app/pages/7_Image_Generation.py)
     - 텍스트를 입력으로 받아 텍스트가 묘사하는 이미지를 생성합니다.
