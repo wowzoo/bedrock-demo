@@ -92,3 +92,11 @@ streamlit run app/Home.py
 ```shell
 cdk destroy BedrockDemo
 ```
+
+
+# To add new lambda function
+```shell
+aws ecr create-repository --repository-name test-func
+aws ecr set-repository-policy --repository-name test-func --policy-text file://ecr-lambda-policy.json
+```
+

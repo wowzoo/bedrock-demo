@@ -13,3 +13,4 @@ cdk.out
 .envrc
 backup/
 BedrockDemo/
+frontUI/resources/
