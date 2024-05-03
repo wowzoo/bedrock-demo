@@ -1,6 +1,6 @@
 
 # Bedrock Demo
-본 데모는 무신사에 딜리버리한 데모를 기반으로 하고 있습니다. 총 5가지의 데모를 Claude 3 모델 기반으로 프롬프트 엔지니어링 기법으로 만들었습니다.
+본 데모는 무신사에 딜리버리한 데모를 기반으로 하고 있습니다. 총 9가지의 데모를 Claude 3 모델 기반으로 프롬프트 엔지니어링 기법으로 만들었습니다.
 
 > [!NOTE]
 > 실제 데모에서는 무신사의 데이터를 이용하였으나 본 Repository에 올리기 위해서 무신사의 데이터를 삭제하였습니다.
@@ -36,6 +36,7 @@ Backend는 *ALB와 Lambda를 통해 Bedrock를 호출하는 부분* 과 *코드 
 ## Prerequisites
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)가 설치되어 있고 사용하려는 계정으로 설정되어 있는지 확인합니다.
 - 컨테이너 이미지를 빌드하려면 [Docker Engine](https://docs.docker.com/engine/install/)이 설치되어 있어야 합니다. *Lambda 함수가 컨테이너 이미지를 사용하고 있습니다.*
+- bedrock 은 us-west-2 에서 사용하고 있고, Model 은 'Amazon Titan Image Generator', 'Anthropic Claude 3 Sonnet', 'Stability AI SDXL 1.0' 를 enable 시킵니다.
 
 ### install cdk
 ```shell
